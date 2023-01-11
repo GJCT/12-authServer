@@ -1,9 +1,10 @@
+const { query } = require('express-validator');
 const mongoose = require('mongoose');
 
 const dbConnection = async()=>{
     try {
         
-        await mongoose.connect(process.env.BD_CNN,{
+        await mongoose.set('strictQuery', false).connect(process.env.BD_CNN,{
             useNewUrlParser: true,
             useUnifiedTopology: true,
             autoIndex: true
