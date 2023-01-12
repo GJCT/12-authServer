@@ -9,14 +9,23 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "express-validator": "^6.14.2",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^6.8.2"
-  }
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GJCT/12-authServer.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/GJCT/12-authServer/issues"
+  },
+  "homepage": "https://github.com/GJCT/12-authServer#readme",
+  "description": ""
 }

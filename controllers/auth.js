@@ -37,7 +37,7 @@ const crearUsuario = async(req, resp = response)=>{
             ok: true,
             uid: dbUser.id,
             name,
-            token
+            token: generarJWT()
         });
         
     } catch (error) {
@@ -80,7 +80,7 @@ const loginUsuario = async(req, res = response)=>{
             ok: true,
             uid: dbUser.id,
             name: dbUser.name,
-            token
+            token: generarJWT()
         });
         
     } catch (error) {
@@ -108,7 +108,7 @@ const validarUsuario = async(req, resp = response)=>{
         ok: true,
         uid,
         name,
-        token
+        token: generarJWT()
     });
 };
 
