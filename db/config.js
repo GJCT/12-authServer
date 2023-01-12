@@ -1,4 +1,3 @@
-const { query } = require('express-validator');
 const mongoose = require('mongoose');
 
 const dbConnection = async()=>{
